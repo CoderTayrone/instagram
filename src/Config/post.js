@@ -7,115 +7,70 @@ import imgPost5 from '../images/imgPost5-640x640.jpg';
 
 const posts = 
     [
-        {   idPost: 0,
+        {   
+            idUser: 1,
+            idPost: 0,
             imgPost: imgPost,
             countLikes: '59',
-            countMessages: '20',
-            messages: [{
-                nameMessage: 'Hey Men'
-            },
-            {
-                nameMessage: 'So Pretty'
-            }
-        ]
+            countMessages: '20'
         },
-        {   idPost: 1,
+        {   
+            idUser: 1,
+            idPost: 0,
             imgPost: imgPost1,
             countLikes: '59',
-            countMessages: '20',
-            messages: [{
-                nameMessage: 'Hey Men'
-            },
-            {
-                nameMessage: 'So Pretty'
-            }
-        ]
+            countMessages: '20'
         },
-        {   idPost: 2,
+        {   
+            idUser: 1,
+            idPost: 0,
             imgPost: imgPost2,
             countLikes: '59',
-            countMessages: '20',
-            messages: [{
-                nameMessage: 'Hey Men'
-            },
-            {
-                nameMessage: 'So Pretty'
-            }
-        ]
+            countMessages: '20'
         },
-        {   idPost: 3,
+        {   
+            idUser: 1,
+            idPost: 0,
             imgPost: imgPost3,
             countLikes: '59',
-            countMessages: '20',
-            messages: [{
-                nameMessage: 'Hey Men'
-            },
-            {
-                nameMessage: 'So Pretty'
-            }
-        ]
+            countMessages: '20'
         },
-        {   idPost: 4,
+        {   
+            idUser: 1,
+            idPost: 0,
             imgPost: imgPost4,
             countLikes: '59',
-            countMessages: '20',
-            messages: [{
-                nameMessage: 'Hey Men'
-            },
-            {
-                nameMessage: 'So Pretty'
-            }
-        ]
+            countMessages: '20'
         },
-        {   idPost: 5,
+        {   
+            idUser: 1,
+            idPost: 0,
             imgPost: imgPost5,
             countLikes: '59',
-            countMessages: '20',
-            messages: [{
-                nameMessage: 'Hey Men'
-            },
-            {
-                nameMessage: 'So Pretty'
-            }
-        ]
+            countMessages: '20'
         },
-        {   idPost: 6,
-            imgPost: imgPost,
-            countLikes: '59',
-            countMessages: '20',
-            messages: [{
-                nameMessage: 'Hey Men'
-            },
-            {
-                nameMessage: 'So Pretty'
-            }
-        ]
-        },
-        {   idPost: 7,
+        {   
+            idUser: 1,
+            idPost: 0,
             imgPost: imgPost1,
             countLikes: '59',
-            countMessages: '20',
-            messages: [{
-                nameMessage: 'Hey Men'
-            },
-            {
-                nameMessage: 'So Pretty'
-            }
-        ]
+            countMessages: '20'
         },
-        {   idPost: 8,
+        {   
+            idUser: 1,
+            idPost: 0,
             imgPost: imgPost3,
             countLikes: '59',
-            countMessages: '20',
-            messages: [{
-                nameMessage: 'Hey Men'
-            },
-            {
-                nameMessage: 'So Pretty'
-            }
-        ]
+            countMessages: '20'
+        },
+        {   
+            idUser: 1,
+            idPost: 0,
+            imgPost: imgPost,
+            countLikes: '59',
+            countMessages: '20'
         }
-
+        
     ]
 
     export default posts;

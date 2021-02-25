@@ -1,4 +1,3 @@
-import Profile from '../src/Pages/Profile';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import PageProfile from '../src/Pages/Profile';
 import Feed from '../src/Pages/Feed';
@@ -14,7 +13,9 @@ function App() {
               <Nav/>
                 <Switch>
                     <Route path="/" exact component={Feed}/>
-                    <Route path="/Profile" component={PageProfile}/>
+                    {/* <Route path="/Profile" exact component={PageProfile}/> */}
+                    <Route path="/Profile/:name" exact component={PageProfile}/>
+                    
                 </Switch>
             </Router>
     </>

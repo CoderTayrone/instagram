@@ -1,39 +1,51 @@
 import '../../../src/style.css';
 import React, { useState } from 'react';
 import CardP from '../../Components/CardPost';
+import CardD from '../../Components/CardDestaque';
 import {Container, ContainerHeader, ImgLogo, ContentProfile, ContainerInsight, ContainerDestaques, ContainerTitles, ContainerPostagens, ContainerModal} from '../Profile/style';
 import posts from '../../Config/post';
 import profiles from '../../Config/profiles';
 import imgProfile from '../../images/imgProfile-150x150.jpg';
+import imgStorie from '../../images/imgPost-640x640.jpg';
+import '../../Components/Nav';
 
 function Profile() {
 /* 
     const [profiles, setProfiles] = useState();
  */
     const [destaques, setDestaques] = useState([
-        {
-            imgDestaque: imgProfile
+        {   
+            idDestaque: 1,
+            imgDestaque: imgStorie
         },
-        {
-            imgDestaque: imgProfile
+        {   
+            idDestaque: 2,
+            imgDestaque: imgStorie
         },
-        {
-            imgDestaque: imgProfile
+        {   
+            idDestaque: 3,
+            imgDestaque: imgStorie
         },
-        {
-            imgDestaque: imgProfile
+        {   
+            idDestaque: 4,
+            imgDestaque: imgStorie
         }
     ])
+
+    let perfils = profiles.filter((profile) => {
+        return profile.nameProfile === search;
+      })
 
     /* const [posts, setPosts] = useState(); */
 
     const [modalIsOpen, setModalIsOpen] = useState(false);
+    
     return (
       <>
           <Container>
                 
-                {
-                    profiles.map(profile => (
+                {   
+                    perfils.map(profile => (
                         <ContainerHeader> {/* Container Header */}
                     
                             <ImgLogo> {/* Profile Header */}
@@ -63,7 +75,10 @@ function Profile() {
 
                         {
                             destaques.map( destaque => (
-                                <div><img src={destaque.imgDestaque}></img></div>
+                                <div>{/* <img src={destaque.imgDestaque}></img> */}
+                                <CardD key={destaque.idDestaque} img={destaque.imgDestaque}></CardD> 
+                                
+                                </div>
                             ))
                         }                        
 

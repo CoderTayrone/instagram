@@ -60,6 +60,10 @@ export const ContainerDestaques = styled.div`
     display: flex;
     justify-content: flex-start;
     margin: 48px;
+
+`
+export const CardDestaque = styled.div`
+    
     img{
             width: 77px;
             margin: 0px 24px;
@@ -144,6 +148,34 @@ export const ContainerModal = styled.div`
             img{
                 width: 600px;;
                 height: 600px;
+            }
+
+        }
+            
+`
+export const ContainerModalStorie = styled.div`
+
+        background-color: white;;
+        width: 500px;
+        height: 700px;
+        margin: 20px auto;
+        position: relative;
+        display: flex;
+
+        h5{
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        div{
+
+
+            img{
+                width: 500px;;
+                height: 750px;
             }
 
         }

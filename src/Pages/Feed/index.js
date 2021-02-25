@@ -18,7 +18,7 @@ function Feed() {
                     <div>
                         {
                             posts.map(post => (
-                                <CardFeed img={post.imgPost} title={post.countLikes} messages={post.messages.nameMessage}>
+                                <CardFeed img={post.imgPost} title={post.countLikes}>
                                     
                                 </CardFeed>
                             ))
