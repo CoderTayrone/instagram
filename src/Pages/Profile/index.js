@@ -1,15 +1,22 @@
 import '../../../src/style.css';
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import CardP from '../../Components/CardPost';
 import CardD from '../../Components/CardDestaque';
 import {Container, ContainerHeader, ImgLogo, ContentProfile, ContainerInsight, ContainerDestaques, ContainerTitles, ContainerPostagens, ContainerModal} from '../Profile/style';
 import posts from '../../Config/post';
 import profiles from '../../Config/profiles';
-import imgProfile from '../../images/imgProfile-150x150.jpg';
 import imgStorie from '../../images/imgPost-640x640.jpg';
 import '../../Components/Nav';
+import {ChallengesContext} from '../../contexts/SearchProvider';
+
+
 
 function Profile() {
+   const searchData  = useContext(ChallengesContext);
+
+
+   console.log(searchData)
+    
 /* 
     const [profiles, setProfiles] = useState();
  */
@@ -33,7 +40,7 @@ function Profile() {
     ])
 
     let perfils = profiles.filter((profile) => {
-        return profile.nameProfile === search;
+        return profile.nameProfile === searchData;
       })
 
     /* const [posts, setPosts] = useState(); */

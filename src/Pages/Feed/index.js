@@ -1,13 +1,19 @@
 import '../../../src/style.css';
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import {Container} from '../Profile/style';
 import {ContainerFeed} from '../Feed/style';
 import CardFeed from '../../Components/CardFeed';
 import posts from '../../Config/post';
+import {ChallengesContext} from '../../contexts/SearchProvider';
+
 
 
 function Feed() {
 
+
+    const searchData  = useContext(ChallengesContext); 
+   console.log(searchData)
+    
   
  
     return (

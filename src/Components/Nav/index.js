@@ -6,16 +6,18 @@ import {Link} from 'react-router-dom';
 function Nav() {
 
   const [search, setSearch] = useState();
+  
+  
 
     return (
       <>  
            <ContainerNav>
                <nav>
-                   <div><Link to={`/profile/${search}`}><h2>Logo</h2></Link></div>
+                   <div><Link to="/profile"><h2>Logo</h2></Link></div>
 
                    <form>
 
-                      <input type="text" value={search}></input>
+                      <input type="text" value={search} onChange={(e)=>{setSearch(e.target.value)}}></input>
                       
                    </form>
 
